@@ -1,0 +1,63 @@
+/*  */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/zpix.ttf') format('truetype');
+    /* Add additional src declarations for other font formats if desired */
+  }
+  
+body {
+    font-family: 'CustomFont', Arial, Helvetica, sans-serif;
+    color: #462DC6;
+  background-image: url("images/Windose20-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0; 
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+/* Example CSS to style the search results */
+.box{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 51px;
+    height: 51px;
+    background: url("images/face.png");
+    /* background-image: url("images/face.png"); */
+    /* border: 4px solid #462DC6; */
+    /* border-radius: 50px; */
+    box-sizing: border-box;
+    font-family: 'CustomFont', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #462DC6;
+    outline: none;
+    transition: .3s;
+}
+.box:hover input{
+    width: 750px;
+    border: 4px solid #462DC6;
+    /* background: #EAD2EC; */
+    background: none;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #462DC6;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
