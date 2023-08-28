@@ -1,6 +1,6 @@
-# kangelwebsite
+# kangelwebsite !(https://github.com/mintyly/kangelwebsite/blob/main/images/face.png)
 
-![alt text](https://github.com/mintyly/kangelwebsite/blob/main/images/face.png)
+
 https://mintyly.github.io/kangelwebsite/
 
 Welcome to kangelwebsite! This website is a fan creation inspired by Needy Streamer Overload, and the game's window 98-esque theme.
