@@ -1,63 +1,94 @@
-/*  */
 @font-face {
     font-family: 'CustomFont';
     src: url('fonts/zpix.ttf') format('truetype');
     /* Add additional src declarations for other font formats if desired */
-  }
-  
+}
+
 body {
     font-family: 'CustomFont', Arial, Helvetica, sans-serif;
     color: #462DC6;
-  background-image: url("images/Windose20-wallpaper.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0; 
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
+    background-image: url("images/Windose20-wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Example CSS to style the search results */
-.box{
+.box {
     position: relative;
+    text-align: center; /* Center-align the content inside .box */
 }
 
 .input {
     padding: 10px;
-    width: 51px;
+    width: 300px; /* Set the desired fixed width */
     height: 51px;
-    background: url("images/face.png");
-    /* background-image: url("images/face.png"); */
-    /* border: 4px solid #462DC6; */
-    /* border-radius: 50px; */
     box-sizing: border-box;
-    font-family: 'CustomFont', Arial, Helvetica, sans-serif;
-    font-size: 26px;
+    font-family: 'CustomFont';
+    font-size: 20px;
     color: #462DC6;
     outline: none;
-    transition: .3s;
-}
-.box:hover input{
-    width: 750px;
-    border: 4px solid #462DC6;
-    /* background: #EAD2EC; */
     background: none;
-    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1.5px rgba(70, 45, 198, 0.5); /* 1-pixel inset border effect */
 }
-.box i{
+
+.box i {
     position: absolute;
     top: 50%;
     right: 15px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 26px;
     color: #462DC6;
-    transition: .2s;
 }
-.box:hover i{
+
+.box i {
     opacity: 0;
     z-index: -1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Adding a subtle shadow */
+    text-align: center; /* Center-align the content inside .card */
+}
+
+.login-icon {
+    font-size: 15px;
+    padding-bottom: 40px;
+}   
+
+.login-icon img {
+    padding: 5px;
+    margin: 0%;
+}
+
+.login-icon h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 35px;
+}
+
+.login {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.login-button {
+    background-color: #EAD2EC;
+    width: 250px;
+    font-family: 'CustomFont';
+    color: #462DC6;
+    border: solid;
+    border-color: #ECECF0;
+    border-width: 2px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
 }
