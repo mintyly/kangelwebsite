@@ -11,6 +11,7 @@
     --content: #462DC6;
 }
 
+
 /* if you have the URL of a font, you can set it below */
 /* feel free to delete this if it's not your vibe */
 
@@ -75,6 +76,7 @@ body {
         text-decoration:none; */
     }
 
+
 #header {
     width: 100%;
     background-color: #462DC6;
@@ -97,6 +99,7 @@ body {
     width: 100%;
     border-top: solid;
     border-color: #462DC6;
+    border-width: 2px;
 }
 
 #navbar ul {
@@ -212,6 +215,10 @@ strong {
     border-width: 2px;
 }
 
+    #toppart:hover {
+        background-color: #94f1e1;
+    }
+
 #topBar {
     display: flex; /* Add this to enable Flexbox */
     align-items: center; /* Vertically center items */
@@ -219,25 +226,75 @@ strong {
     width: 100%;
     height: 30px;
     padding: 3px;
+    padding-bottom: 0px;
     /*font-size: smaller;*/
     color: #462DC6;
-    background-color: #e2e2e2;
+/*    background-color: #e2e2e2;*/
     border-bottom: solid;
+    border-color: #462DC6;
+    border-width: 2px;
+    border-bottom: none;
+}
+
+/*    #topBar:hover {
+        background-color: #94f1e1;
+    }*/
+
+#internaltopBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to the left and right edges */
+    width: 100%;
+    height: 26px;
+    padding-left: 1px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #462DC6;
+    background-color: #e2e2e2;
+    border: solid;
     border-color: #462DC6;
     border-width: 2px;
 }
 
-    #topBar:hover {
-        background-color: #94f1e1;
-    }
+#leftContent {
+    display: flex;
+    align-items: center;
+}
 
-#internaltopBar {
-    display: flex; /* Add this to enable Flexbox */
-    align-items: center; /* Vertically center items */
-    justify-content: flex-start; /* Align items to the left */
-    width: 100%;
-    height: 22px;
-    padding: 5px;
+#internaltopBar p {
+    margin: 0; /* Reset margin to remove extra spacing */
+}
+
+#internaltopBar img {
+    padding-right: 4px;
+}
+
+#internaltopBar #button {
+    justify-content: flex-end; /* Align the buttons to the right */
+}
+
+#leftButtons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*    #internaltopBar:hover {
+        background-color: #ead2ec;
+    }*/
+
+#headerArea {
+    padding: 3px;
+}
+
+#internalheaderArea {
+    /*display: flex;*/ /* Add this to enable Flexbox */
+    /*align-items: center;*/ /* Vertically center items */
+    /*justify-content: flex-start;*/ /* Align items to the left */
+    /*width: 100%;*/
+/*    height: 22px;
+    padding: 5px;*/
     font-weight: bold;
     font-size: medium;
     color: #462DC6;
@@ -247,9 +304,7 @@ strong {
     border-width: 2px;
 }
 
-    #internaltopBar:hover {
-        background-color: #ead2ec;
-    }
+
 
 #leftSidebarTopBar {
     display: flex;
