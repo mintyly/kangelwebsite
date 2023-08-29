@@ -88,15 +88,11 @@ body {
     background-position: center;
 }
 
-#toppart {
-    border: solid;
-    border-color: #462DC6;
-    margin-bottom: 10px;
-}
+
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #ead2ec;
+    background-color: #f9eff9;
     /* navbar color */
     width: 100%;
     border-top: solid;
@@ -138,9 +134,9 @@ body {
         if you want to style them separately,
         create styles for #leftSidebar and #rightSidebar */
 aside {
-    background-color: #ead2ec;
+    background-color: #f9eff9;
     width: 200px;
-/*    padding: 20px;*/
+    /*    padding: 20px;*/
     font-size: smaller;
     /* this makes the sidebar text slightly smaller */
 }
@@ -149,9 +145,9 @@ aside {
 /* this is the color of the main content area,
         between the sidebars! */
 main {
-    background-color: #ead2ec;
+    background-color: #f9eff9;
     flex: 1;
-/*    padding: 20px;*/
+    /*    padding: 20px;*/
     order: 2;
     border: solid;
     border-color: #462DC6;
@@ -172,7 +168,7 @@ main {
 }
 
 footer {
-    background-color: #ead2ec;
+    background-color: #f9eff9;
     /* background color for footer */
     width: 100%;
     height: 40px;
@@ -208,19 +204,52 @@ strong {
 
 /* CSS for extras */
 
+#toppart {
+    background-color: #ead2ec;
+    border: solid;
+    border-color: #462DC6;
+    margin-bottom: 10px;
+    border-width: 2px;
+}
+
 #topBar {
     display: flex; /* Add this to enable Flexbox */
     align-items: center; /* Vertically center items */
     justify-content: flex-start; /* Align items to the left */
     width: 100%;
     height: 30px;
-    padding: 10px;
+    padding: 3px;
     /*font-size: smaller;*/
     color: #462DC6;
-    background-color: #ead2ec;
+    background-color: #e2e2e2;
     border-bottom: solid;
     border-color: #462DC6;
+    border-width: 2px;
 }
+
+    #topBar:hover {
+        background-color: #94f1e1;
+    }
+
+#internaltopBar {
+    display: flex; /* Add this to enable Flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%;
+    height: 22px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: medium;
+    color: #462DC6;
+    background-color: #e2e2e2;
+    border: solid;
+    border-color: #462DC6;
+    border-width: 2px;
+}
+
+    #internaltopBar:hover {
+        background-color: #ead2ec;
+    }
 
 #leftSidebarTopBar {
     display: flex;
@@ -229,10 +258,13 @@ strong {
     height: 30px;
     padding: 10px;
     color: #462DC6;
-    background-color: #ead2ec;
+    background-color: #e2e2e2;
     border-bottom: solid;
     border-color: #462DC6;
 }
+    #leftSidebarTopBar:hover {
+        background-color: #ead2ec;
+    }
 
 
 #leftSidebar {
@@ -248,10 +280,14 @@ strong {
     height: 30px;
     padding: 10px;
     color: #462DC6;
-    background-color: #ead2ec;
+    background-color: #e2e2e2;
     border-bottom: solid;
     border-color: #462DC6;
 }
+
+    #mainTopBar:hover {
+        background-color: #ead2ec;
+    }
 
 #bottomBarMargin {
     padding: 20px;
