@@ -9,7 +9,7 @@ Welcome to kangelwebsite! This website is a fan creation inspired by Needy Strea
 I plan to add more content in the future and fully flesh out the website eventually.
 
 ## TODO LIST
-- Finish up the rest of the windows
+- ~~Finish up the rest of the windows~~
 - create the other portions of the website
     - photo gallary?
     - link to the game

@@ -58,7 +58,7 @@ body {
         the other elements, you will need to move that div outside
         of the container */
 #container {
-    max-width: 900px;
+    max-width: 1100px;
     /* this is the width of your layout! */
     /* if you change the above value, scroll to the bottom
           and change the media query according to the comment! */
@@ -136,25 +136,27 @@ body {
 /* this colors BOTH sidebars
         if you want to style them separately,
         create styles for #leftSidebar and #rightSidebar */
-aside {
-    background-color: #f9eff9;
-    width: 200px;
-    /*    padding: 20px;*/
-    font-size: smaller;
-    /* this makes the sidebar text slightly smaller */
-}
-
 
 /* this is the color of the main content area,
         between the sidebars! */
-main {
-    background-color: #f9eff9;
+#content {
     flex: 1;
-    /*    padding: 20px;*/
     order: 2;
+    margin-right: 0px;
+    width: 400px;
     border: solid;
     border-color: #462DC6;
+    border-width: 2px;
+    background-color: #ead2ec;
+    padding: 3px;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
 }
+#content:hover {
+    background-color: #94f1e1;
+}
+
 
 /* what's this "order" stuff about??
         allow me to explain!
@@ -180,6 +182,9 @@ footer {
     /* this centers the footer text */
     border: solid;
     border-color: #462DC6;
+    border-width: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h1,
@@ -304,6 +309,20 @@ strong {
     border-width: 2px;
 }
 
+#leftSidebar {
+    margin-right: 10px;
+    width: 400px;
+    border: solid;
+    border-color: #462DC6;
+    border-width: 2px;
+    background-color: #ead2ec;
+    padding: 3px; 
+    font-size: smaller;
+}
+
+    #leftSidebar:hover {
+        background-color: #94f1e1;
+    }
 
 
 #leftSidebarTopBar {
@@ -311,42 +330,29 @@ strong {
     align-items: center;
     justify-content: flex-start;
     height: 30px;
-    padding: 10px;
     color: #462DC6;
     background-color: #e2e2e2;
     border-bottom: solid;
     border-color: #462DC6;
+    border-width: 2px;
 }
-    #leftSidebarTopBar:hover {
+/*    #leftSidebarTopBar:hover {
         background-color: #ead2ec;
-    }
-
-
-#leftSidebar {
-    margin-right: 10px;
-    border: solid;
-    border-color: #462DC6;
-}
-
-#mainTopBar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 30px;
-    padding: 10px;
-    color: #462DC6;
-    background-color: #e2e2e2;
-    border-bottom: solid;
-    border-color: #462DC6;
-}
-
-    #mainTopBar:hover {
-        background-color: #ead2ec;
-    }
+    }*/
 
 #bottomBarMargin {
     padding: 20px;
+    border: solid;
+    background-color: #f9eff9;
+    border-color: #462DC6;
+    border-width: 2px;
+    margin-top: 3px;
+    flex-grow: 1;
 }
+
+
+
+
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 /* so you wanna change the width of your page?
@@ -360,15 +366,12 @@ strong {
         flex-wrap: wrap;
     }
 
-    aside {
-        width: 100%;
-    }
 
     /* the order of the items is adjusted here for responsiveness!
           since the sidebars would be too small on a mobile device.
           feel free to play around with the order!
           */
-    main {
+    #content {
         order: 1;
     }
 

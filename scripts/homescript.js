@@ -1,12 +1,12 @@
-// script.js
+const sections = document.querySelectorAll('.hoverable');
 
-const toppart = document.getElementById('toppart');
-const internaltopBar = document.getElementById('internaltopBar');
+sections.forEach((section) => {
+    const internaltopBar = section.querySelector('#internaltopBar');
+    section.addEventListener('mouseenter', () => {
+        internaltopBar.style.backgroundColor = '#ead2ec'; // Change to the desired color
+    });
 
-toppart.addEventListener('mouseenter', () => {
-    internaltopBar.style.backgroundColor = '#ead2ec'; // Change to the desired color
-});
-
-toppart.addEventListener('mouseleave', () => {
-    internaltopBar.style.backgroundColor = '#e2e2e2'; // Change to the default color
+    section.addEventListener('mouseleave', () => {
+        internaltopBar.style.backgroundColor = '#e2e2e2'; // Change to the default color
+    });
 });

@@ -9,7 +9,7 @@
 <body>
     <div id="container">
 
-        <div id="toppart">
+        <div id="toppart" class="hoverable">
             <div id="topBar">
                 <div id="internaltopBar">
                     <div id="leftContent">
@@ -43,17 +43,22 @@
             </div>
         </div>
 
-
         <div id="flex">
-            <aside id="leftSidebar">
-
-                <div id="leftSidebarTopBar">
-                    <!--This is the left sidebar's topbar!-->
+            <div id="leftSidebar" class="hoverable">
+                <div id="internaltopBar">
+                    <div id="leftContent">
+                        <img src="images\windowbase_icon.png" />
+                        <p>updates.exe</p>
+                    </div>
+                    <div id="leftButtons">
+                        <img src="images\button_minimize.png" id="button" />
+                        <img src="images\button_maximize.png" id="button" />
+                        <img src="images\button_close.png" id="button" />
+                    </div>
                 </div>
-
+                <!--This is the left sidebar's topbar!-->
                 <div id="bottomBarMargin">
                     <h2>Updates</h2>
-
                     <div class="box">
                         <p>My confessions</p>
                         <ul style="padding-left:10px;">
@@ -72,25 +77,30 @@
                         </li>
                     </ul>
                 </div>
-            </aside>
+            </div>
 
-            <main>
-
-                <div id="mainTopBar">
-                    <!--This is the main section's topbar!-->
+            <div id="content" class="hoverable">
+                <div id="internaltopBar">
+                    <div id="leftContent">
+                        <img src="images\windowbase_icon.png" />
+                        <p>main.txt</p>
+                    </div>
+                    <div id="leftButtons">
+                        <img src="images\button_minimize.png" id="button" />
+                        <img src="images\button_maximize.png" id="button" />
+                        <img src="images\button_close.png" id="button" />
+                    </div>
                 </div>
-
+                    <!--This is the main section's topbar!-->
                 <div id="bottomBarMargin">
                     <h1>LEVEL 3 GYATT</h1>
                     <p><strong>Please read this first!</strong></p>
                     <p>According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway. Because bees don't care what humans think is impossible.” SEQ. 75 - “INTRO TO BARRY” INT. BENSON HOUSE - DAY ANGLE ON: Sneakers on the ground. Camera PANS UP to reveal BARRY BENSON’S BEDROOM ANGLE ON: Barry’s hand flipping through different sweaters in his closet. BARRY Yellow black, yellow black, yellow black, yellow black, yellow black, yellow black...oohh, black and yellow... </p>
-                    <div />
-
-            </main>
-
+                </div>
+            </div>
         </div>
 
-        <footer id="footer" style="margin-top: 10px;"></footer>
+        <footer id="footer"></footer>
     </div>
     <!-- Import JS file -->
     <script src="scripts\homescript.js"></script>
