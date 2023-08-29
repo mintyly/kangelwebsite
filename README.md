@@ -1,5 +1,5 @@
 <div>
-    <img src="https://github.com/mintyly/kangelwebsite/blob/main/images/face.png" alt="alt text" width="100" height="100">
+    <img src="https://github.com/mintyly/kangelwebsite/blob/main/images/banner.png" alt="alt text">
     <h1>kangelwebsite</h1>
 </div>
 
