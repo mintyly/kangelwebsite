@@ -1,6 +1,6 @@
 <div>
-    <img src="https://github.com/mintyly/kangelwebsite/blob/main/images/banner.png" alt="alt text">
     <h1>kangelwebsite</h1>
+    <img src="https://github.com/mintyly/kangelwebsite/blob/main/images/banner.png">
 </div>
 
 https://mintyly.github.io/kangelwebsite/
