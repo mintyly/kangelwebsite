@@ -5,7 +5,7 @@
         these tended to confuse some people, so I only kept
         the images as variables */
 :root {
-    --header-image: url('images/banner.png');
+    --header-image: url('images/banner_website.png');
     --body-bg-image: url('images/Windose20-wallpaper.png');
     /* colors */
     --content: #462DC6;
