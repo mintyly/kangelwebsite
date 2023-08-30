@@ -10,12 +10,13 @@ I plan to add more content in the future and fully flesh out the website eventua
 
 ## TODO LIST
 - ~~Finish up the rest of the windows~~
+- re edit banner photo
 - create the other portions of the website
     - photo gallary?
     - link to the game
     - visitor counter
     - in game cursors
-    - ame webcam view!
+    - ~~ame webcam view~~
 
 - perhaps the navbar is unnessesary?
 

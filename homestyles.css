@@ -81,7 +81,8 @@ body {
     width: 100%;
     background-color: #462DC6;
     /* header color here! */
-    height: 150px;
+    height: 225px;
+
     /* this is only for a background image! */
     /* if you want to put images IN the header,
           you can add them directly to the <div id="header"></div> element! */
@@ -218,6 +219,7 @@ strong {
     border-color: #462DC6;
     margin-bottom: 10px;
     border-width: 2px;
+    margin-right: 10px;
 }
 
     #toppart:hover {
