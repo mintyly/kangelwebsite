@@ -5,7 +5,7 @@
         these tended to confuse some people, so I only kept
         the images as variables */
 :root {
-    --header-image: url('images/banner_website.png');
+    --header-image: url('images/banner_website_text.png');
     --body-bg-image: url('images/Windose20-wallpaper.png');
     /* colors */
     --content: #462DC6;
@@ -208,6 +208,7 @@ strong {
     background-color: #ead2ec;
     border: 1px solid #462DC6;
     padding: 10px;
+    margin: 0;
 }
 
 
@@ -268,6 +269,7 @@ strong {
     align-items: center;
 }
 
+
 #internaltopBar p {
     margin: 0; /* Reset margin to remove extra spacing */
 }
@@ -326,6 +328,29 @@ strong {
         background-color: #94f1e1;
     }
 
+.side-by-side {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+    .side-by-side h3 {
+        margin: 0; /* Reset margin to remove extra spacing */
+        margin-left: -15px;
+        margin-top: -15px;
+        margin-bottom: 5px;
+
+    }
+
+    .side-by-side img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        margin-right: 20px; /* Add some spacing between img and h3 */
+        border: solid;
+        border-color: #462DC6;
+        border-radius: 100%;
+        border-width: 1px;
+    }
 
 #leftSidebarTopBar {
     display: flex;
