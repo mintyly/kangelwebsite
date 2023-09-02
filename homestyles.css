@@ -5,7 +5,7 @@
         these tended to confuse some people, so I only kept
         the images as variables */
 :root {
-    --header-image: url('images/banner_website_text.png');
+/*    --header-image: url('images/banner_website_text.png');*/
     --body-bg-image: url('images/Windose20-wallpaper.png');
     /* colors */
     --content: #462DC6;
@@ -46,6 +46,11 @@ body {
     box-sizing: border-box;
 }
 
+img {
+    margin: 0;
+}
+
+
 /* below this line is CSS for the layout */
 
 /* this is a CSS comment
@@ -81,15 +86,20 @@ body {
     width: 100%;
     background-color: #462DC6;
     /* header color here! */
-    height: 225px;
-
     /* this is only for a background image! */
     /* if you want to put images IN the header,
           you can add them directly to the <div id="header"></div> element! */
     background-size: contain;
     background-image: var(--header-image);
     background-position: center;
+    height: 225px;
+    width: 700px;
 }
+
+    #header img {
+        height: 225px;
+        width: 700px;
+    }
 
 
 /* navigation section!! */
@@ -264,6 +274,24 @@ strong {
     border-width: 2px;
 }
 
+#bannerimage {
+    height: 225px;
+    width: 715px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#amegif {
+    height: 225px;
+    width: 348px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+
+
 #leftContent {
     display: flex;
     align-items: center;
@@ -388,29 +416,54 @@ strong {
         and then subtrack it by 100. use this new number as the
         "max-width" value below
         */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #flex {
         flex-wrap: wrap;
     }
-
 
     /* the order of the items is adjusted here for responsiveness!
           since the sidebars would be too small on a mobile device.
           feel free to play around with the order!
           */
-    #content {
-        order: 1;
-    }
-
-    #leftSidebar {
+    #top {
         order: 2;
     }
 
-    #rightSidebar {
-        order: 3;
+    #leftSidebar {
+        order: 1;
+    }
+
+    #content {
+        order: 2;
     }
 
     #navbar ul {
         flex-wrap: wrap;
     }
+
+    #flex {
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+
+    /* Add other mobile-specific styles here */
+
+    #bannerimage {
+        height: 115px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    #amegif {
+        height: 115px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+
+
+
 }
